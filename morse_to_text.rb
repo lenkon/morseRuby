@@ -13,17 +13,13 @@ end
 
 def decode_word(enc_word)
   decoded_word = ''
-  enc_word.split.each do |enc_char|
-    decoded_word += decode_char(enc_char)
-  end
+  enc_word.split.each { |n| decoded_word += decode_char(n)}
   decoded_word
 end
 
 def decode(enc_text)
   dec_text = []
-  enc_text.split('   ').each do |enc_word|
-    dec_text.push(decode_word(enc_word))
-  end
+  enc_text.split('   ').each { |n| dec_text.push(decode_word(n)) }
   dec_text.join(' ')
 end
 
