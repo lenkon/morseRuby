@@ -1,5 +1,5 @@
 def decode_char(data)
-  mapedData = {
+  maped_data = {
     '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D',
     '.' => 'E', '..-.' => 'F', '--.' => 'G', '....' => 'H',
     '..' => 'I', '.---' => 'J', '-.-' => 'K', '.-..' => 'L',
@@ -8,7 +8,7 @@ def decode_char(data)
     '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
     '-.--' => 'Y', '--..' => 'Z'
   }
-  mapedData[data]
+  maped_data[data]
 end
 
 def decode_word(enc_word)
