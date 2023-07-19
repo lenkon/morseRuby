@@ -26,3 +26,5 @@ def decode(enc_text)
   end
   dec_text.join(' ')
 end
+
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
